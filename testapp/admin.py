@@ -1,0 +1,24 @@
+from django.contrib import admin
+from .models import hydjobs, blorejobs, chennaijobs, punejobs
+
+
+class hydjobsAdmin(admin.ModelAdmin):
+    list_display = ['date','company','title','eligibility','address','email','phonenumber']
+
+
+class blorejobsAdmin(admin.ModelAdmin):
+    list_display = ['date','company','title','eligibility','address','email','phonenumber']
+
+
+class chennaijobsAdmin(admin.ModelAdmin):
+    list_display = ['date','company','title','eligibility','address','email','phonenumber']
+
+
+class punejobsAdmin(admin.ModelAdmin):
+    list_display = ['date','company','title','eligibility','address','email','phonenumber']
+
+
+admin.site.register(hydjobs, hydjobsAdmin)
+admin.site.register(blorejobs, blorejobsAdmin)
+admin.site.register(chennaijobs, chennaijobsAdmin)
+admin.site.register(punejobs, punejobsAdmin)
